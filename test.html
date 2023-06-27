@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        #swiper-section{
+            width: 100%;
+            background-image: url(image/testi-back.png);
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          padding: 50px 20px;
+          display: flex;
+          justify-content: flex-end;
+        }
+        .swiper {
+          width: 30%;
+          height: 100%;
+          padding: 20px;
+          display: flex;
+  justify-content: flex-end; /* Add this line to align the content within .swiper to the right */
+  flex-direction: column;
+        }
+    
+        .swiper-slide {
+    background-color: white;
+    padding: 50px 20px 0 20px;
+border-radius: 10px;
+text-align: center;
+          font-size: 18px;
+        }
+     .swiper-slide h1{
+      font-size:xx-large;
+     }
+     .swiper-slide p{
+        padding-bottom: 30px;
+     }
+     p i{
+        border-bottom: 2px solid #00C4CC;
+     }
+        .swiper-slide img {
+          display: block;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      </style>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My React Website</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/react@17.0.2/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@17.0.2/umd/react-dom.development.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js"></script>
+</head>
+<body>
+    <section id="swiper-section">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="image/Capture.PNG" alt="">
+                <h1>Manjeet Singh</h1>
+                <p><i>web developer</i></p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet inventore quos ipsum officia omnis! Laudantium officiis rerum totam veniam voluptatibus quos suscipit. Ex natus in consequuntur rerum eius facere beatae.
+                </p>
+              </div>
+              <div class="swiper-slide">Slide 2</div>
+              <div class="swiper-slide">Slide 3</div>
+              <div class="swiper-slide">Slide 4</div>
+              <div class="swiper-slide">Slide 5</div>
+              <div class="swiper-slide">Slide 6</div>
+              <div class="swiper-slide">Slide 7</div>
+              <div class="swiper-slide">Slide 8</div>
+              <div class="swiper-slide">Slide 9</div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </section>
+        <section id="footer">
+            <p>hello</p>
+        </section>
+        <script type="text/babel" src="script.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+        <script>
+            var swiper = new Swiper(".mySwiper", {
+              pagination: {
+                el: ".swiper-pagination",
+                dynamicBullets: true,
+              },
+            });
+          </script>
+    
+        <script src="https://kit.fontawesome.com/7103fc097b.js" crossorigin="anonymous"></script>
+    </body>
+    </html>
